@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Crime and Safety Assistant</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css"
+        type="text/css">
+</head>
+
+<body>
+    <!-- floating sidebar -->
+    <div class="sidebar">
+        <div class="title">
+            <h3>
+                NYC Crime and Safety Tool
+            </h3>
+
+        </div>
+        <div class="instructions">
+            <strong>
+                Instructions:
+            </strong>
+            <p>
+                This is a crime and safety tool for residents in New York City. Users may interact with the map in two ways:
+            </p>
+            <p class="inst-point">
+                1: Click on each precinct to view the NYPD station within that precinct.
+            </p>
+            <p class="inst-point">
+                2: Enter your current location in the search bar at the top right-hand corner and view the NYPD station in your precinct, along with a route to get there.
+            </p>
+        </div>
+    </div>
+    
+    <!--Map container div-->
+    <div id="map"></div>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/stations.js"></script>
+</body>
+
+</html>
